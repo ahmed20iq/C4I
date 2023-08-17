@@ -1,0 +1,54 @@
+.head{
+    background-color: #5953ae;
+    color: #ffffff;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+.contact-form{
+    margin: 50px 0;
+}
+.contact-form form input[type=text],
+.contact-form form input[type=email]{
+    width: 49%;
+    padding: 0 10px;
+    border: 1px solid #f2f2f2;
+}
+.contact-form form input[type=text]:focus,
+.contact-form form input[type=email]:focus,
+.contact-form form textarea:focus{
+    border: 1px solid #5953ae;
+}
+textarea{
+    width: 100%;
+    margin: 20px 0;
+    padding: 0 10px;
+    border: 1px solid #f2f2f2;
+    resize: none;
+}
+.contact-form form input[type=submit],
+.contact-form form input[type=reset]{
+    width: 49%;
+    border: none;
+    padding: 5px 0;
+}
+.contact-form form input[type=submit]{
+    background-color: #5953ae;
+    color: #ffffff;
+}
+.contact-form form input[type=submit]:hover{
+    background-color: #403a99;
+}
+.contact-form form input[type=reset]:hover{
+    background-color: #e4e4e4;
+}
+@media (max-width: 767px){
+    .contact-form img{
+        display: none;
+    }
+    .contact-form .container{
+        display: block;
+    }
+    .contact-form .container > div{
+        width: 100% !important;
+    }
+}

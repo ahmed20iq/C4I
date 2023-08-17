@@ -1,0 +1,83 @@
+.head{
+    background-color: #5953ae;
+    color: #ffffff;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+/* Search Form */
+.search-form{
+    background-color: #f1f1f1;
+}
+.search-form .container{
+    padding: 75px 0;
+}
+.search-form .container input{
+    width: 125px;
+}
+.search-form .container input,
+.search-form .container select{
+    padding: 15px 10px;
+    border-radius: 0;
+    border: 1px solid #f1f1f1;
+    margin: 0;
+    background-color: #ffffff;
+}
+.search-form .container input:focus,
+.search-form .container select:focus{
+    border-color: #5953ae;
+}
+.search-form .container input[type=submit]{
+    background-color: #5953ae;
+    color: #ffffff;
+    border: none;
+    padding: 17px 50px;
+}
+.search-form .container input[type=submit]:hover{
+    background-color: #45408b;
+}
+
+/* Table Of University */
+.table-university{
+    margin: 50px 0;
+}
+.table-university table{
+    width: 100%;
+    font-size: 12px;
+}
+.table-university table thead{
+    background-color: #5953ae;
+    color: #ffffff;
+}
+.table-university table thead th{
+    padding: 10px 0;
+}
+.table-university table tbody tr td{
+    padding: 5px 0;
+    text-align: center;
+}
+.table-university table tbody tr:hover td{
+    background-color: #5953ae;
+    color: #ffffff;
+}
+.table-university table tbody tr:nth-of-type(even){
+    background-color: #f2f2f2;
+}
+
+@media (max-width: 767px){
+    .search-form .container form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .search-form .container form *{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .table-university{
+        overflow-x: scroll;
+    }
+    .table-university table{
+        font-size: 9px;
+    }
+}

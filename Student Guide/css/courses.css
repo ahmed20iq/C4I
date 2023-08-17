@@ -1,0 +1,88 @@
+.head{
+    background-color: #5953ae;
+    color: #ffffff;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+/* Search Form */
+.search-form{
+    background-color: #f1f1f1;
+}
+.search-form .container{
+    padding: 75px 0;
+}
+.search-form .container input{
+    width: 125px;
+}
+.search-form .container input,
+.search-form .container select{
+    padding: 15px 10px;
+    border-radius: 0;
+    border: 1px solid #f1f1f1;
+    margin: 0;
+}
+.search-form .container input:focus,
+.search-form .container select:focus{
+    border-color: #5953ae;
+}
+.search-form .container input[type=submit]{
+    background-color: #5953ae;
+    color: #ffffff;
+    border: none;
+    padding: 17px 50px;
+}
+.search-form .container input[type=submit]:hover{
+    background-color: #45408b;
+}
+/* Courses */
+.courses-show{
+    padding: 50px 0;
+}
+.courses-show .container{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    grid-gap: 20px;
+}
+.courses-show .container .course-item{
+    background-color: white;
+    box-shadow: 0 0 5px 5px #f8f8f8;
+    border-radius: 2px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+}
+.courses-show .container .course-item:hover{
+    box-shadow: 0 0 5px 5px #e2e2e2;
+    transition: all .2s ease-in-out;
+}
+.courses-show .container .course-item img{
+    width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+}
+.courses-show .container .course-item:hover img{
+    object-fit: cover;
+}
+.courses-show .container .course-item a{
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: #5953ae;
+}
+
+@media (max-width: 767px){
+    .search-form .container form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .search-form .container select,
+    .search-form .container input{
+        width: 100%;
+        margin-bottom: 10px;
+        background-color: #ffffff;
+    }
+    .courses-show .container{
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+    }
+}
